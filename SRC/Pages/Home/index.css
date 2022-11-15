@@ -1,0 +1,283 @@
+* {
+    margin: 0px;
+}
+
+body {
+   background-color: gray; 
+   margin: 0px;
+}
+
+.section-1 * {
+    z-index: 10;
+}
+
+.section-1 {
+    position: relative;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url('../../Assets/Images/fundo.svg');
+    background-position: -390px 0px;
+    background-size: cover;
+    color: #fff;
+    background-color: #404eed;
+    padding: 0px 40px 120px 40px;
+
+}
+
+.section-1 nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1260px;
+    margin-bottom: 140px;
+}
+
+.section-1 .menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-1 .titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1 .botao {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-1 nav .menu div {
+    font: 16px Discord4;
+    margin: 25px;
+}
+
+.section-1 nav button {
+    background-color: #fff;
+    font: 14px Discord3;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.section-1 .titulo h1 {
+    font: 60px Discord2;
+    padding: 0px 50px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.section-1 .titulo p {
+    font: 20px Discord3;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.section-1 .titulo {
+    width: 780px;
+    text-align: center;
+}
+
+.section-1 .botao {
+    margin-bottom: 10px;
+}
+
+.section-1 .botao button svg {
+    margin-right: 8px;
+}
+
+.section-1 .botao button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    margin: 0px 10px;
+    border-radius: 50px;
+
+    font: 20px Discord1;
+    padding: 15px 35px;
+}
+
+.section-1 .botao .escuro {
+    background-color: #232723   ;
+    color: #fff;
+}
+
+.section-1 .boneco-esqueda {
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    margin-right: 375px;
+}
+
+.section-1 .boneco-direita {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: 370px;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    padding: 5em 2em; /*primero de cima pra baixo, depois direita pra esquerda*/
+}
+
+.section-2 img {
+    width: 100%;
+    max-width: 678px;
+    max-height: 440px;
+}
+
+.s2-textos {
+    width: 23.8em; /*limite na largura dos textos de section 2 textox*/
+    margin-left: 7em;
+}
+
+.s2-textos h1 {
+    font: 48px 'Discord4';
+    line-height: 58px;
+}   
+
+.s2-textos p {
+    font: 20px 'Discord1';
+    line-height: 30px;
+    color: #23272a;
+    
+}   
+
+
+@media (max-width: 1170px) {
+
+    .section-2 img {
+        width: 50%;
+        max-width: 678px;
+        max-height: 440px;
+    }
+
+    .s2-textos {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .section-1 {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .section-1 .titulo {
+        width: 60%;
+    }
+
+    .section-1 .titulo * {
+        text-align: left;
+        padding: 0px !important; /*prioridade entre 2 sobrescritas*/
+    }
+
+    .section-1 .titulo p {
+        font-size: clamp(16px,2vw,20px);
+        line-height: 1.8em;
+    }
+
+    .section-1 .botao {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-1 .botao button {
+        margin-bottom: 1em;
+    }
+
+    .section-1 .menu {
+        display: none;
+    }
+
+    .section-1 .boneco-esqueda {
+        display: none;
+    }
+
+    .section-1 .boneco-direita {
+        margin-left: -70px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section-1 {
+        padding: 0em 1.5em;
+        padding-bottom: 23em;
+        background-image: none;
+    }
+
+    .section-1 nav {
+        margin-bottom: 4em;
+    }
+
+    .section-1 .titulos h1 {
+        font-size: clamp(24px,5vw,44px);
+        margin-bottom: 10px;
+    }
+
+    .section-1 .titulos {
+        width: auto;
+    }
+
+    .section-1 .botao {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .section-1 .botao button {
+        margin: 10px;
+    }
+
+    .section-1 .boneco-esqueda {
+        display: block;
+        margin-right: 0px;
+        right: 15%;
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .section-1 .boneco-direita {
+        display: none;
+    }
+
+    .section-2 {
+        flex-direction: column;
+    }
+
+    .section-2 img {
+        width: 90%;
+    }
+
+    .s2-textos {
+        width: auto;
+    }
+
+    .s2-textos h1 {
+        font-size: clamp(20px,4vw,40px);
+        line-height: 1.2em;
+        margin-bottom: .8em;
+    }
+
+    .s2-textos p {
+        font-size: clamp(16px,2vw,20px);
+        line-height: 1.6em;
+    }
+}
