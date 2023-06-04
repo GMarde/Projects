@@ -5,7 +5,7 @@ Following is a schedule to learn data science step by step.
 
 ## Week 1 and 2: Excel and Statistics
 
-* ###Excel 
+* **Excel**
 
 
 ###* Statistics 
