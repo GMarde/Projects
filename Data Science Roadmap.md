@@ -3,15 +3,15 @@
 
 Following is a schedule to learn data science step by step.
 
-## Week 1 and 2: Excel and Statistics
+## Excel and Statistics
 
-* **Excel**
-
-
-###* Statistics 
+* Excel
 
 
-###* Python and R
+* Statistics 
+
+
+* Python and R
   
 ## Numpy, Pandas, Data Visualization Libraries  
 
